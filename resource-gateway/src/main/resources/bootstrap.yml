@@ -3,7 +3,7 @@ server:
   port: 9888
 spring:
   application:
-    name: qsf-gateway
+    name: auth-gateway
   redis:
     database: 5
     host: 127.0.0.1
@@ -23,7 +23,7 @@ spring:
         instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
         prefer-ip-address: true
         service-name: ${spring.application.name}
-      host: qsf-consul
+      host: 127.0.0.1
       port: 8500
     inetutils:
       ignored-interfaces:
