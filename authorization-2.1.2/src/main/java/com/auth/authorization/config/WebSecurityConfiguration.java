@@ -18,9 +18,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-//                .anonymous().disable()
+                .anonymous().disable()
                 .authorizeRequests()
-                .antMatchers("/actuator/health").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling();

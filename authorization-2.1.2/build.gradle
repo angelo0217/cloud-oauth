@@ -38,6 +38,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.apache.commons:commons-pool2")
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-resource-server')
     implementation 'org.springframework.security.experimental:spring-security-oauth2-authorization-server:0.1.0'
     implementation('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.4.2')
     implementation('org.springframework.security:spring-security-jwt')
